@@ -12,11 +12,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
               
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+<link type="text/css" href="https://cdn.datatables.net/buttons/1.1.2/css/buttons.dataTables.min.css" rel="stylesheet">
+
 <title>JSP Page</title>
     </head>
-    <body>
-       
-            
+    <body>    
         <form>      
             <table id="table_id" class="cell-border compact stripe hover stripe order-column row-border">
                 <thead>
@@ -38,14 +38,30 @@
                 </tr>
                 </c:forEach>
             </table>
-            
-              <input type="button" onclick="location.href='userDetails'" value="Add" align="center">
+            <input type="button" onclick="location.href='userDetails'" value="Add Users" style="display: block;margin: auto">
         </form>
         <script type="text/javascript" src="resources/js/jquery-3.3.1.js"></script>  
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/tabletools/2.2.4/js/dataTables.tableTools.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/tabletools/2.2.2/swf/copy_csv_xls_pdf.swf"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.flash.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.print.min.js"></script>      
+        
         <script type="text/javascript">
+            
             $(document).ready( function () {
-         $('#table_id').DataTable()
+          $('#table_id').DataTable({
+            responsive: true,
+            "pageLength": 50,
+            dom: 'Bfrtip',
+            buttons: ['copy','csv','excel','pdf','print']
+        });
          
     });
        </script>
