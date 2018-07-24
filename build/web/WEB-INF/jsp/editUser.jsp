@@ -11,25 +11,27 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <link rel="stylesheet" type="text/css" href="resources/css/form.css">
+        <script src="main.js"></script>
     </head>
     <body>
-        <div>
-        <form action="EditUserHelper?id=${userId}" method="POST">
+        <div class="form-content">
+        <form  action="EditUserHelper?id=${userId}" method="POST">
 
+            
             <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter your Name" name="uname" required>
+            <input class="form-input" type="text" id="name" placeholder="Enter your Name" name="uname" required>
 
             <label for="address">Address</label>     
-            <input type="text" id="address" placeholder="Enter your Address" name="uaddress" required>
+            <input class="form-input" type="text" id="address" placeholder="Enter your Address" name="uaddress" required>
 
             <label for="age">Age</label>   
-            <input type="text" id="age" placeholder="Enter your age" name="uage" required>
+            <input class="form-input" type="text" id="age" placeholder="Enter your age" name="uage" required>
 
 
-            Male<input type="radio" name="ugender" value="Male">
-            Female<input type="radio" name="ugender" value="Female">
+            Male<input class="form-input-radio" type="radio" name="ugender" value="Male">
+            Female<input class="form-input-radio" type="radio" name="ugender" value="Female">
 
-            <input type="submit" value="Save to Database">
+            <input type="submit" value="Save to Database" class="btn-submit">
         </form>
         </div>
     </body>

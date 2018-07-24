@@ -13,26 +13,26 @@
         <link rel="stylesheet" type="text/css" href="resources/css/form.css">
     </head>
     <body>
-        <div>
+        <div class="form-content">
             <form method="post" action="addUser">
 
                 <label for="name">Name</label>                             
-                <input type="text" id="name" placeholder="Enter your Name" name="uname" required>
+                <input class="form-input" type="text" id="name" placeholder="Enter your Name" name="uname" required>
                 
                 <label for="address">Address</label>        
-                <input type="text" id="address" placeholder="Enter your Address" name="uaddress" required>
+                <input class="form-input" type="text" id="address" placeholder="Enter your Address" name="uaddress" required>
                 
                 <label for="age">Age</label>
-                <input type="text" id="age" placeholder="Enter your age" name="uage" required>
+                <input class="form-input" type="text" id="age" placeholder="Enter your age" name="uage" required>
 
                 
-                <label for="gender">Gender</label>
+                <label for="gender" style="display: block">Gender</label>
              
                     
-                Male<input id="gender" type="radio" name="ugender" value="Male">   
-                Female<input id="gender" type="radio" name="ugender" value="Female">
+                <input class="form-input-radio" id="gender" type="radio" name="ugender" value="Male">Male   
+                <input class="form-input-radio" id="gender" type="radio" name="ugender" value="Female"> Female
                 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="btn-submit">
             </form>
         </div>
     </body>
