@@ -10,46 +10,27 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" type="text/css" href="resources/css/form.css">
     </head>
     <body>
+        <div>
         <form action="EditUserHelper?id=${userId}" method="POST">
-            <table>
-                <tr>
-                    <td>
-                        Name:
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Enter your Name" name="uname" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Address:
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Enter your Address" name="uaddress" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Age:
-                    </td>
-                    <td>
-                <input type="text" placeholder="Enter your age" name="uage" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Gender:
-                    </td>
-                    <td>
-                        Male<input type="radio" name="ugender" value="Male">
-                        Female<input type="radio" name="ugender" value="Female">
-                    </td>
-                </tr>
-            </table>
-             <!--<a href="EditUserHelper?id=${userId}">Save to database</a>-->
-  <input type="submit" value="Save to Db">
-         </form>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your Name" name="uname" required>
+
+            <label for="address">Address</label>     
+            <input type="text" id="address" placeholder="Enter your Address" name="uaddress" required>
+
+            <label for="age">Age</label>   
+            <input type="text" id="age" placeholder="Enter your age" name="uage" required>
+
+
+            Male<input type="radio" name="ugender" value="Male">
+            Female<input type="radio" name="ugender" value="Female">
+
+            <input type="submit" value="Save to Database">
+        </form>
+        </div>
     </body>
 </html>

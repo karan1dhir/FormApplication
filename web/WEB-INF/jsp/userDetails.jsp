@@ -10,49 +10,30 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" type="text/css" href="resources/css/form.css">
     </head>
     <body>
-        <form method="post" action="addUser">
-            <table>
-                <tr>
-                    <td>
-                        Name:
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Enter your Name" name="uname" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Address:
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Enter your Address" name="uaddress" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Age:
-                    </td>
-                    <td>
-                <input type="text" placeholder="Enter your age" name="uage" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Gender:
-                    </td>
-                    <td>
-                        Male<input type="radio" name="ugender" value="Male">
-                        Female<input type="radio" name="ugender" value="Female">
-                    </td>
-                </tr>
-                <tr>    
-                    <td>
-                    <input type="submit" value="Submit">
-                    </td>
-                </tr>
-            </table>
-        </form>
+        <div>
+            <form method="post" action="addUser">
+
+                <label for="name">Name</label>                             
+                <input type="text" id="name" placeholder="Enter your Name" name="uname" required>
+                
+                <label for="address">Address</label>        
+                <input type="text" id="address" placeholder="Enter your Address" name="uaddress" required>
+                
+                <label for="age">Age</label>
+                <input type="text" id="age" placeholder="Enter your age" name="uage" required>
+
+                
+                <label for="gender">Gender</label>
+             
+                    
+                Male<input id="gender" type="radio" name="ugender" value="Male">   
+                Female<input id="gender" type="radio" name="ugender" value="Female">
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </body>
 </html>
