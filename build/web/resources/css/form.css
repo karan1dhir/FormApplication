@@ -52,7 +52,6 @@ and open the template in the editor.
 
 /* -------------------------------------------Applying Styles to DataTable-------------------------*/
 
-
 .display-main-content{
     
     border-radius: 5px;
@@ -64,7 +63,18 @@ and open the template in the editor.
     top:5vh; 
     box-shadow: 0px 3px 20px #e3e3e3;  
 }
-
+.dt-button.copy-Button{
+  border: 1px solid #cf6d17;
+}
+.dt-button.download-Button{
+    border: 1px solid #009688;
+}
+.dt-button.print-Button{
+    border: 1px solid #ff9800;
+}
+.dt-button.add-Button{
+    border: 1px solid #e91e63;
+}
 
 
 

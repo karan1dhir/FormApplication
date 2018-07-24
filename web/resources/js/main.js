@@ -16,12 +16,11 @@
                             { extend: 'print', className: 'print-Button'},
                             {
                                text: 'Add',
+                               className:"add-Button",
                                action:function(){ 
-                                  
-                                alert("In javascript");
-                                   
-                              }                   
-                        }  
+                                location="userDetails";
+                              }
+                    }  
             ]
         });
     });

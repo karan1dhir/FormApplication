@@ -27,7 +27,7 @@
             <label for="age">Age</label>   
             <input class="form-input" type="text" id="age" placeholder="Enter your age" name="uage" required>
 
-
+            
             Male<input class="form-input-radio" type="radio" name="ugender" value="Male">
             Female<input class="form-input-radio" type="radio" name="ugender" value="Female">
 
