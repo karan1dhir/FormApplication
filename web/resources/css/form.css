@@ -15,7 +15,7 @@ and open the template in the editor.
     background-color: #fff;
     padding: 20px;
     width:50%;
-    position: absolute;
+    position: fixed;
     left:50vh;
     top:10vh; 
     box-shadow: 0px 3px 20px #e3e3e3;
@@ -32,7 +32,8 @@ and open the template in the editor.
 .form-input-radio{
        
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
+    
 }
 .btn-submit {
     width: 100%;
@@ -48,7 +49,10 @@ and open the template in the editor.
 .btn-submit:hover {
     background-color: #cf6d17;
 }
-
+.gender-Female{
+    position: relative;
+    left:20vh;
+}
 
 /* -------------------------------------------Applying Styles to DataTable-------------------------*/
 
@@ -73,14 +77,51 @@ and open the template in the editor.
     border: 1px solid #ff9800;
 }
 .dt-button.add-Button{
+    border: 1px solid #4bc82e;
+}
+.dt-button.delete-Button{
     border: 1px solid #e91e63;
 }
+.dt-button.edit-Button{
+    border: 1px solid #00c5c7;
+}
 
+/*----------------------------------------Form Validations Classes--------------------------*/
 
+.error {
+  width  : 100%;
+  padding: 0;
+  font-size: 80%;
+  color: red;
+  border-radius: 0 0 3px 3px;
+  box-sizing: border-box;
+}
+.error.active {
+  padding: 0.3em;
+}
 
-
-
-
+.error1 {
+  width  : 100%;
+  padding: 0;
+  font-size: 80%;
+  color: red;
+  border-radius: 0 0 3px 3px;
+  box-sizing: border-box;
+}
+.error1.active {
+  padding: 0.3em;
+}
+.error2 {
+  width  : 100%;
+  padding: 0;
+  font-size: 80%;
+  color: red;
+  border-radius: 0 0 3px 3px;
+  box-sizing: border-box;
+}
+.error2.active {
+  padding: 0.3em;
+}
 
 
 

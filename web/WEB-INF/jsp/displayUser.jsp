@@ -19,26 +19,23 @@
         <div class="display-main-content">
             <form>      
                 <table id="table_id" class="cell-border compact stripe hover stripe order-column row-border">
-                    <thead>
+                    <thead> 
+                    <td hidden="true">Id</td>    
                     <td>Name</td>
                     <td>Address</td>
                     <td>Age</td>
-                    <td>Gender</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td>Gender</td>     
                     </thead>
                     <c:forEach var="user" items="${userList}">
                         <tr>
+                            <td hidden="true">${user.id}</td>
                             <td>${user.uname}</td>
                             <td>${user.uaddress}</td>   
                             <td>${user.uage}</td>
                             <td>${user.ugender}</td>
-                            <td><a href="editUser?id=${user.id}">Edit</a></td>
-                            <td><a href="deleteUser?id=${user.id}">Delete</a></td>
                         </tr>
                     </c:forEach>
                 </table>
-<!--                <input type="button" onclick="location.href = 'userDetails'" value="Add Users" style="display: block;margin: auto">-->
             </form>
             <script type="text/javascript" src="resources/js/jquery-3.3.1.js"></script>  
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
